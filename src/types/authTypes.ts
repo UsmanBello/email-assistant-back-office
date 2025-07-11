@@ -18,5 +18,6 @@ export interface AuthStateType {
     refreshToken?: string | null;
     isAuthenticated: boolean;
     isAuthenticating: boolean;
+    isLoadingFromStorage: boolean;
     error: string | null;
 } 
