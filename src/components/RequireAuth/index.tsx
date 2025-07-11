@@ -24,7 +24,16 @@ export default function RequireAuth({ children }: RequireAuthProps) {
     // Show loading while checking auth from localStorage
     if (isLoadingFromStorage) {
         console.log("[RequireAuth] Loading auth from storage...");
-        return <div>Loading...</div>;
+        return (
+            <div className="d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
+                <div className="text-center">
+                    <div className="spinner-border text-primary" role="status">
+                        <span className="visually-hidden">Loading...</span>
+                    </div>
+                    <p className="mt-3 text-muted">Loading your session...</p>
+                </div>
+            </div>
+        );
     }
 
     // Don't render children if no token (will redirect)
