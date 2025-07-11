@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
-import { useLoginWithGoogleMutation } from "@/features/authApiSlice";
-import { setCredentials, setError } from "@/features/authSlice";
+import { useLoginWithGoogleMutation } from "@/lib/redux/features/authApiSlice";
+import { setCredentials, setError } from "@/lib/redux/features/authSlice";
 import { useRouter } from "next/navigation";
 import Alert from "react-bootstrap/Alert";
 

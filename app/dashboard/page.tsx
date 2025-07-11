@@ -1,7 +1,7 @@
 "use client";
 import { RequireAuth } from "@/components";
 import { useSelector } from "react-redux";
-import { RootState } from "@/redux/store";
+import { RootState } from "@/lib/redux/store";
 
 export default function DashboardPage() {
     const user = useSelector((state: RootState) => state.auth.user);

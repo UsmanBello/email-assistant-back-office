@@ -1,8 +1,8 @@
 "use client";
 import { Provider } from "react-redux";
-import { store } from "@/redux/store";
+import { store } from "@/lib/redux/store";
 import { useEffect } from "react";
-import { loadFromStorage } from "@/features/authSlice";
+import { loadFromStorage } from "@/lib/redux/features/authSlice";
 
 export function Providers({ children }: { children: React.ReactNode }) {
     useEffect(() => {

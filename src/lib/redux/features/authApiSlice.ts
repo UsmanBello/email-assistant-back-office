@@ -1,4 +1,4 @@
-import { apiSlice } from '@/redux/api/apiSlice';
+import { apiSlice } from '@/lib/redux/api/apiSlice';
 import { AuthResponse } from '@/types/authTypes';
 
 export const authApiSlice = apiSlice.injectEndpoints({

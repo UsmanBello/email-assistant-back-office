@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { useRouter } from "next/navigation";
-import { RootState } from "../../redux/store";
+import { RootState } from "../../../lib/redux/store";
 
 interface RequireAuthProps {
     children: React.ReactNode;
